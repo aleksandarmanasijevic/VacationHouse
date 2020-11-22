@@ -5,8 +5,9 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import {HomePage} from '../HomePage';
-import {GalleryPage} from '../Gallery/GalleryPage';
+import {HomePage} from '../../HomePage/HomePage';
+import {GalleryPage} from '../../Gallery/GalleryPage';
+import './NavigationBar.css';
 
 export const NavigationBar: React.FC<any> = (props: any) => {
     return (
