@@ -1,0 +1,38 @@
+.NavigationBar{
+    display: flex;
+    /*background-color: cadetblue;*/
+    justify-content: left;
+    align-items: center;
+}
+
+.NavigationBar ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 2rem;
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 1rem 0rem;
+    color: black;
+}
+
+ul li a:hover{
+    border-top: 2px solid #c19b76;
+    border-bottom: 2px solid #c19b76;
+}
+
+img{
+    width: 6rem;
+}
+
+.LogoLink{
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    ul li a{
+        color: aqua;
+    }
+}
+

@@ -6,7 +6,8 @@ export const GalleryPage: React.FC<any> = (props: any) => {
         return <div>Temp</div>
     }
     return (
-        <div>
+        <div className = 'GalleryPage'>
+            <h1>this is gallery page</h1>
             <Temp/>
         </div>
     );

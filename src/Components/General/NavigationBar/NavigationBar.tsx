@@ -1,43 +1,23 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
-import {HomePage} from '../../HomePage/HomePage';
-import {GalleryPage} from '../../Gallery/GalleryPage';
+import {Link} from "react-router-dom";
 import './NavigationBar.css';
+import placeholderLogo from '../../../Images/placeholderLogo.png'
 
 export const NavigationBar: React.FC<any> = (props: any) => {
     return (
-        <Router>
-            <div>
+            <div className= 'NavigationBar'>
+                <Link className='LogoLink' to="/"><img src={placeholderLogo}  /></Link>
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/GalleryPage">GalleryPage</Link>
                     </li>
                     <li>
-                        <Link to="/dashboard">Dashboard</Link>
+                        <Link to="/ContactUs">ContactUs</Link>
                     </li>
                 </ul>
-
-                <hr />
-                <Switch>
-                    <Route exact path="/">
-                        <HomePage />
-                    </Route>
-                    <Route path="/about">
-                        {/*<About />*/}
-                    </Route>
-                    <Route path="/gallery">
-                        <GalleryPage />
-                    </Route>
-                </Switch>
             </div>
-        </Router>
     );
 }
